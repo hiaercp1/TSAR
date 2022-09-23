@@ -59,7 +59,7 @@ def menu():
     print(Fore.RED + "                             \::/    /                \::/    /                \:|   |          ")
     print(Fore.RED + "                              \/____/                  \/____/                  \|___|          ")
     print("                                                                                                           ")
-    print("Made by RedEye > version 0.9")
+    print("Made by RedEye > version 1.0")
 
     print ("""CHOOSE HACKING TOOL:
     [1]>Hashcrack
