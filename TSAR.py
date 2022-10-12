@@ -10,6 +10,7 @@ import sys
 from datetime import datetime
 import scapy.all as scapy
 import re   
+import nmap
 
 
 
