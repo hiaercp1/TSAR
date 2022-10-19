@@ -128,14 +128,14 @@ def Wifi_scan():
     while True:
         ip2 = input("\nEnter ip adress and range: ")
 
-        if ip.search(ip):
+        if ip.search(ip2):
 
-            print(f"{ip_add_range_entered} is valid ip address range")
+            print(f"{ip2} is valid ip address range")
             break
 
 
 
-    arp_result = scapy.arping(ip_add_range_entered)
+    arp_result = scapy.arping(ip2)
 
 
 
@@ -273,105 +273,3 @@ def hashcrack():
 
 
 menu()
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#Simona.H i still love you!!!!
