@@ -9,8 +9,7 @@ from colorama import Back, Fore, Style
 import sys
 from datetime import datetime
 import scapy.all as scapy
-import re   
-import nmap
+import re
 
 
 
