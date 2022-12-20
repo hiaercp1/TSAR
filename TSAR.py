@@ -267,7 +267,7 @@ def Portus():
         print("host not responding")
         menu()
     choicee = input("Again [y/n]: ")
-        if choicee == "y" or "Y":
+        if choicee == "y":
             Portus()
         else:
             menu()
