@@ -87,9 +87,9 @@ def exit():
     print("**********************************************************")
 
     exit = input()
-    if exit == "Y" or exit == "y":
+    if exit == "Y" or "y":
         sys.exit()
-    elif exit == "N" or exit == "n":
+    elif exit == "N" or "n":
         menu()
     
 
@@ -267,7 +267,7 @@ def Portus():
         print("host not responding")
         menu()
     choicee = input("Again [y/n]: ")
-        if choicee == "y" or choicee == "Y":
+        if choicee == "y" or "Y":
             Portus()
         else:
             menu()
@@ -316,7 +316,7 @@ def password_generator():
     print("this is your password: " + newpassword)
 
     choice2 = input("Again [y/n]\n")
-    if choice2 == "y" or choice2 == "Y":
+    if choice2 == "y" or "Y":
         password_generator()
     else:
         menu()
@@ -386,7 +386,7 @@ def hashcrack():
     if flag == 0:
         print("password.is.not.in.the.list")
         vyber = input("Again [y/n]\n")
-        if vyber == "y" or vyber == "Y":
+        if vyber == "y" or "Y":
             hashcrack()
         else:
             menu()
