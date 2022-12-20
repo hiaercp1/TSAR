@@ -266,11 +266,7 @@ def Portus():
     except socket.error:
         print("host not responding")
         menu()
-    choicee = input("Again [y/n]: ")
-        if choicee == "y":
-            Portus()
-        else:
-            menu()
+    
  
 
 
