@@ -14,6 +14,12 @@ import re
 
 
 
+
+
+
+
+
+
 def choice():
     choice = input("Select option >> ")
     
@@ -28,7 +34,47 @@ def choice():
     elif choice == "5":
         exit()
     else:
-        menu()
+        choice2()
+
+
+
+
+
+
+
+
+
+
+
+
+def choice2():
+    choice = input("Select option >> ")
+    
+    if choice == "1":
+         hashcrack()
+    elif choice == "2":
+        password_generator()
+    elif choice == "3":
+        Portus()
+    elif choice == "4":
+        Wifi_scan()
+    elif choice == "5":
+        exit()
+    else:
+        choice()
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
 
 def exit():
     os.system("cls")
@@ -41,14 +87,24 @@ def exit():
     print("**********************************************************")
 
     exit = input()
-    if exit == "Y" or "y":
+    if exit == "Y" or exit == "y":
         sys.exit()
-    elif exit == "N" or "n":
+    elif exit == "N" or exit == "n":
         menu()
     
 
 
 
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 
 
 
@@ -96,6 +152,20 @@ def menu():
     choice()
 
 
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 def Wifi_scan():
 
     os.system("cls")
@@ -135,11 +205,22 @@ def Wifi_scan():
 
 
     arp_result = scapy.arping(ip2)
+    
 
 
 
 
 
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 
 
 
@@ -185,7 +266,24 @@ def Portus():
     except socket.error:
         print("host not responding")
         menu()
+    choicee = input("Again [y/n]: ")
+        if choicee == "y" or choicee == "Y":
+            Portus()
+        else:
+            menu()
  
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -218,11 +316,34 @@ def password_generator():
     print("this is your password: " + newpassword)
 
     choice2 = input("Again [y/n]\n")
-    if choice2 == "y":
-        os.system("cls")
+    if choice2 == "y" or choice2 == "Y":
         password_generator()
     else:
         menu()
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
     
 def hashcrack():
@@ -265,10 +386,21 @@ def hashcrack():
     if flag == 0:
         print("password.is.not.in.the.list")
         vyber = input("Again [y/n]\n")
-        if vyber == "y" or "Y":
+        if vyber == "y" or vyber == "Y":
             hashcrack()
         else:
             menu()
-
-
-menu()
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+if __name__ == "main":
+    menu()
