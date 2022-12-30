@@ -1,3 +1,7 @@
+#!/usr/bin/python3
+
+
+
 import os
 import requests
 import random
@@ -34,7 +38,7 @@ def choice():
     elif choice == "5":
         exit()
     else:
-        choice2()
+        menu()
 
 
 
@@ -47,37 +51,10 @@ def choice():
 
 
 
-def choice2():
-    choice = input("Select option >> ")
+
+
     
-    if choice == "1":
-         hashcrack()
-    elif choice == "2":
-        password_generator()
-    elif choice == "3":
-        Portus()
-    elif choice == "4":
-        Wifi_scan()
-    elif choice == "5":
-        exit()
-    else:
-        choice()
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-
 def exit():
-    os.system("cls")
     os.system("clear")
     print("**********************************************************")
     print("*    Do you really wanna exit and close program??        *")
@@ -109,8 +86,6 @@ def exit():
 
 
 def menu():
-
-    os.system("cls")
     os.system("clear")
 
     colorama.init(autoreset=True)
@@ -137,7 +112,7 @@ def menu():
     print(Fore.RED + "                             \::/    /                \::/    /                \:|   |          ")
     print(Fore.RED + "                              \/____/                  \/____/                  \|___|          ")
     print("                                                                                                           ")
-    print("Made by RedEye > version 1.5")
+    print("Made by Hiercp1 > version 2.0")
 
     print ("""CHOOSE TOOL:
     [1]>Hashcrack
@@ -167,8 +142,6 @@ def menu():
     
     
 def Wifi_scan():
-
-    os.system("cls")
     os.system("clear")
 
 
@@ -225,7 +198,6 @@ def Wifi_scan():
 
 
 def Portus():
-    os.system("cls")
     os.system("clear")
     print("  ▄███████▄  ▄██████▄     ▄████████     ███     ███    █▄     ▄████████ ")
     print(" ███     ███ ███    ███   ███    ███ ▀█████████▄ ███   ███   ███    ███ ")
@@ -291,7 +263,6 @@ def Portus():
 
 def password_generator():
     os.system("clear")
-    os.system("cls")
     print("                                                                          __                                                              __                        ")
     print("                                                                         |  \                                                            |  \                       ")
     print("  ______   ______   _______  _______ __   __   __  ______   ______   ____| $$        ______   ______  _______   ______   ______  ______ _| $$_    ______   ______   ")
@@ -343,7 +314,7 @@ def password_generator():
     
     
 def hashcrack():
-    os.system("cls")
+    os.system("clear")
     flag = 0
 
     print(" _   _   ___   _____ _   _   _____ ______  ___  _____  _   __")
