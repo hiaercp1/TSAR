@@ -1,7 +1,4 @@
 #!/usr/bin/python3
-
-
-
 import os
 import requests
 import random
@@ -14,14 +11,6 @@ import sys
 from datetime import datetime
 import scapy.all as scapy
 import re
-
-
-
-
-
-
-
-
 
 
 def choice():
@@ -41,19 +30,6 @@ def choice():
         menu()
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-    
 def exit():
     os.system("clear")
     print("**********************************************************")
@@ -69,22 +45,6 @@ def exit():
     elif exit == "N" or "n":
         menu()
     
-
-
-
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-
-
-
 def menu():
     os.system("clear")
 
@@ -126,21 +86,6 @@ def menu():
     """)
     choice()
 
-
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
 def Wifi_scan():
     os.system("clear")
 
@@ -178,24 +123,6 @@ def Wifi_scan():
 
 
     arp_result = scapy.arping(ip2)
-    
-
-
-
-
-
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-
-
 
 def Portus():
     os.system("clear")
@@ -239,29 +166,7 @@ def Portus():
         print("host not responding")
         menu()
     
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-def password_generator():
+ def password_generator():
     os.system("clear")
     print("                                                                          __                                                              __                        ")
     print("                                                                         |  \                                                            |  \                       ")
@@ -288,32 +193,7 @@ def password_generator():
     else:
         menu()
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-def hashcrack():
+ def hashcrack():
     os.system("clear")
     flag = 0
 
@@ -357,10 +237,6 @@ def hashcrack():
             hashcrack()
         else:
             menu()
-            
-            
-            
-            
             
             
             
