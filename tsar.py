@@ -15,19 +15,19 @@ import re
 
 def choice():
     choice = input("Select option >> ")
-    
-    if choice == "1":
-         hashcrack()
-    elif choice == "2":
-        password_generator()
-    elif choice == "3":
-        Portus()
-    elif choice == "4":
-        Wifi_scan()
-    elif choice == "5":
-        exit()
-    else:
-        menu()
+    match coice:
+        case "1":
+            hashcrack()
+        case "2":
+            password_generator()
+        case "3":
+            Portus()
+        case "4":
+            Wifi_scan()
+        case "5":
+            exit()
+        case _:
+            menu()
 
 
 def exit():
@@ -245,5 +245,5 @@ def Portus():
             
             
             
-if __name__ == "main":
+if __name__ == "__main__":
     menu()
